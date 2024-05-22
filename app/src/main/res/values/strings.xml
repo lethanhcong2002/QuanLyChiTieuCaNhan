@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DoAnCuoiKi</string>
+    <string name="logo_description">Logo</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_info">Infomation</string>
+    <string name="nav_logout">Logout</string>
+
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

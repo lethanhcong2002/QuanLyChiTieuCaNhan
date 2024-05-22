@@ -1,0 +1,103 @@
+<!-- activity_main.xml hoặc fragment_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thống Kê Theo Thời Gian"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        android:id="@+id/txtHeader"/>
+
+    <EditText
+        android:id="@+id/startDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Chọn ngày bắt đầu"
+        android:inputType="none"
+        android:clickable="true"
+        android:focusable="false"
+        android:background="@android:drawable/editbox_background"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtHeader" />
+
+    <EditText
+        android:id="@+id/endDateEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/startDateEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Chọn ngày kết thúc"
+        android:inputType="none"
+        android:clickable="true"
+        android:focusable="false"
+        android:background="@android:drawable/editbox_background"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnXacNhan"
+        android:text="Xác Nhận"
+        android:layout_below="@id/endDateEditText"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:id="@+id/ll_thongke"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnXacNhan"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@drawable/item_background">
+
+        <TextView
+            android:id="@+id/txtNgayBD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtNgayKT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtTongThuNhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtTongChiTieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtDanhGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- Nút xem chi tiết -->
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnXemChiTiet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xem chi tiết"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

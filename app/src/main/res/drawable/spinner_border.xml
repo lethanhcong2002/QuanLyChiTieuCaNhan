@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/spinner_border.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Color -->
+    <item android:drawable="@android:color/transparent" />
+
+    <!-- Border -->
+    <item>
+        <shape>
+            <stroke android:width="2dp" android:color="#000000" /> <!-- Độ dày và màu của đường viền -->
+            <corners android:radius="4dp" /> <!-- Bo góc của Spinner -->
+        </shape>
+    </item>
+</layer-list>
